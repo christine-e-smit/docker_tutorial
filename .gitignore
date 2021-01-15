@@ -1,0 +1,5 @@
+*.pyc
+.vscode
+.devcontainer
+from_thomas
+from_thomas.txt
