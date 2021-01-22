@@ -13,7 +13,7 @@ setuptools.setup(
     description="Regrids MERRA to AIRS L3 grid",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    scripts=["regrid.py"],
+    scripts=["regrid.py", "plot.py"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",

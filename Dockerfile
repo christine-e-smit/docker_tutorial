@@ -1,9 +1,14 @@
 ###############################################################################
-# Base image with cdo.
+# Base image with cdo and required packages
 ###############################################################################
 FROM continuumio/miniconda3 as base
 
 RUN conda install -y -c conda-forge cdo
+
+WORKDIR /
+COPY requirements.txt .
+RUN conda install -y -c conda-forge --file requirements.txt
+RUN rm requirements.txt
 
 ###############################################################################
 # Create a production container with the regrid script installed in a standard
