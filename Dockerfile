@@ -19,6 +19,7 @@ RUN mkdir /tmp/install
 WORKDIR /tmp/install
 COPY setup.py .
 COPY regrid.py .
+COPY plot.py .
 COPY README.md .
 COPY requirements.txt .
 RUN python setup.py install
@@ -51,8 +52,8 @@ RUN rm -rf /tmp/secrets
 # Install editors, if that's what you like to use. I use Visual Studio Code,
 # which is why you'll see devcontainer.json and settings.json in this
 # repository.
-RUN apt-get install vim
-RUN apt-get install emacs
+RUN apt-get install -y vim
+RUN apt-get install -y emacs
 
 # pytest: unit testing
 # pylint: static code linting
