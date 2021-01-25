@@ -8,7 +8,7 @@ This Dockerfile is an _example_, not a real production-ready image. A real
 production image would need to have some kind of http server to accept job
 requests or some kind of script to fetch job requests from elsewhere.
 
-# Build
+## Build
 
 To build the prod stage of the container, run:
 
@@ -25,6 +25,7 @@ Breaking down the command:
 3. `--target prod` - tells docker to build the target called `prod`.
 4. `-t docker_tutorial_prod` - tells docker to call the image
 `docker_tutorial_prod`.
+5. `.` - tells docker to build the current directory.
 
 ## Regrid
 

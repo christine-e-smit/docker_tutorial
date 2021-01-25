@@ -7,6 +7,7 @@ to an AIRS L3 grid using cdo.
 Many thanks to Thomas Hearty for suggesting this use case and Mahabaleshwara
 Hegde for suggesting plotting.
 
-1. [Tutorial Content](docs/Content.md)
+1. [Introduction](docs/Content.md)
 2. [Get MERRA data](docs/GetData.md) <-- Do this before you try to run the tutorial!
 3. [Build and run the "production" container](docs/Production.md)
+4. [Develop inside a container](docs/Develop.md)
