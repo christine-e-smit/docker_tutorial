@@ -1,5 +1,5 @@
 ###############################################################################
-# Base image with cdo and required packages
+# Base image with cdo and required packages.
 ###############################################################################
 FROM continuumio/miniconda3 as base
 
@@ -10,9 +10,19 @@ COPY requirements.txt .
 RUN conda install -y -c conda-forge --file requirements.txt
 RUN rm requirements.txt
 
+
 ###############################################################################
 # Production image with the scripts installed in a standard directory.
+#
+# NOTE 1: Generally speaking, a production container will be configured to run
+# some kind of service that will get input from somewhere other than the
+# command line. E.g. - it might have an http server that accepts requests or
+# it might poll some other http service for jobs.
+#
+# NOTE 2: Production containers should be as small as possible. I have not
+# made any attempt to minimize the size of this container.
 ###############################################################################
+
 FROM base as prod
 
 RUN mkdir /tmp/install
@@ -27,11 +37,13 @@ RUN python setup.py install
 WORKDIR /
 RUN rm -rf /tmp/install
 
+
 ###############################################################################
 # Development container with some of the tools we might want to run during
 # development. The assumption is that you will mount the code into the dev
 # container, so there's no need to copy the code into the container.
 ###############################################################################
+
 FROM base as dev
 
 # Install git-secrets, which can be used as a git hook to prevent you from
