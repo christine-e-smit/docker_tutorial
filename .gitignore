@@ -1,5 +1,7 @@
 *.pyc
-.vscode
-.devcontainer
 from_thomas
 from_thomas.txt
+.ipynb_checkpoints
+*.ipynb
+work_area
+*~
