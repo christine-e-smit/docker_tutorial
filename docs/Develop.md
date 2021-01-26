@@ -62,8 +62,8 @@ We are planning to do an entire tutorial on development tools. But this will
 give you an introduction to using Visual Studio Code's remote development
 capability. I actually used VSC (and a some jupyter notebook) to
 create this tutorial. The secret sauce here is the
-`.devcontainer/devcontainer.json` file. This tells VSC what container I want to
-use. The `.vscode/settings.json` file contains standard VSC configuration.
+`.devcontainer/devcontainer.json` file. This tells VSC what container to use
+The `.vscode/settings.json` file contains standard VSC configuration.
 
 To get started, open VSC and point it to the root directory of this repository.
 On the lower left, you should see a green rectangle on the lower left with
