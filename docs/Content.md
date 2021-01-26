@@ -25,6 +25,6 @@ shamelessly copied from Thomas Hearty.
 
 ## Plotting with Matplotlib and Cartopy
 
-Matplotlib (https://matplotlib.org/) and a general purpose plotting library and
-Cartopy (https://scitools.org.uk/cartopy/docs/latest/) a geospatial library.
+Matplotlib (https://matplotlib.org/) is a general purpose plotting library and
+Cartopy (https://scitools.org.uk/cartopy/docs/latest/) is a geospatial library.
 They are used by `plot.py` to draw data on maps.
