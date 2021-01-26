@@ -2,7 +2,7 @@
 
 This project has an example Dockerfile that can be used to build a container
 that regrids and plots a MERRA-2 M2IMNPASM (doi:10.5067/2E096JV59PK7) granule
-to an AIRS L3 grid using cdo.
+to an AIRS L3 grid using CDO, matplotlib, and cartopy.
 
 Many thanks to Thomas Hearty for suggesting this use case and Mahabaleshwara
 Hegde for suggesting plotting.
