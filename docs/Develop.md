@@ -43,7 +43,7 @@ container.
 
 Breaking down the command:
 
-1. `docker` - calls the docker daemon.
+1. `docker` - calls the docker daemon
 2. `run` - tells docker to run (instantiate) a docker image
 3. `--rm` - tells docker to get rid of the instantiated image when it exits
 4. `-it` - these two options together allow you to get a command prompt inside
@@ -62,7 +62,7 @@ We are planning to do an entire tutorial on development tools. But this will
 give you an introduction to using Visual Studio Code's remote development
 capability. I actually used VSC (and a some jupyter notebook) to
 create this tutorial. The secret sauce here is the
-`.devcontainer/devcontainer.json` file. This tells VSC what container to use
+`.devcontainer/devcontainer.json` file. This tells VSC what container to use.
 The `.vscode/settings.json` file contains standard VSC configuration.
 
 To get started, open VSC and point it to the root directory of this repository.
