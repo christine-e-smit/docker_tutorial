@@ -65,10 +65,9 @@ create this tutorial. The secret sauce here is the
 `.devcontainer/devcontainer.json` file. This tells VSC what container to use.
 The `.vscode/settings.json` file contains standard VSC configuration.
 
-To get started, open VSC and point it to the root directory of this repository.
-On the lower left, you should see a green rectangle on the lower left with
-greater than and less than symbols. Click on there and select
-`Remote-Containers : Reopen in Container`.
+To get started, open VSC select the root directory of this repository. On the
+lower left, you should see a green rectangle with greater than and less than
+symbols. Click on there and select `Remote-Containers : Reopen in Container`.
 
 For more information, read VSC's documentation:
 [https://code.visualstudio.com/docs/remote/containers](https://code.visualstudio.com/docs/remote/containers).
